@@ -1,5 +1,5 @@
 function [notok] = check(ea,n)
-       es = 5e-20;
+       es = 5e-10;
        notok = true;
        count = 0;
        for i =1:n
