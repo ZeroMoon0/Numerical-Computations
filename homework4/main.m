@@ -56,9 +56,9 @@ for i = 1:length(x)
     y2(i) = log(y(i));
 end
 [a2,b2] = fit(x2,y2);
-a2 = exp(a2);
+b2 = exp(b2);
 
-f = @(x)(a2*exp(b2/x));
+f = @(x)(b2*exp(a2/x));
 myplot(f,x,y);
 
 
